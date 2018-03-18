@@ -1,3 +1,3 @@
 # quickref
 
-Personal quick ref (misc)
+Personal quick reference (misc)
