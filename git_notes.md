@@ -14,5 +14,13 @@
 `git show commit-id` compares a commit against its parent. Parent isn't obvious after a merge, since commits are sorted by timestamp.
 `git merge --abort` aborts merge
 `git branch -d branch-name` - delete a branch, usually after merging it into master
+`git remote -v` shows name and path of remote repository
+`git fetch` updates local version of the remote branch (called origin/master). If remote changes were made by a collaborator, fetch pulls them down without messing with my master branch.
+`git log origin/master` shows the changes committed remotely but not on my local origin.
+`git merge origin origin/master` puts them together
+`git diff origin/master master`
 
+`git pull` is the same as `git fetch` then `git merge`
 Git highlights merge conflicts in the text editor
+
+Some text for part 2...and 3!!!
