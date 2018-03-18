@@ -23,4 +23,6 @@
 `git pull` is the same as `git fetch` then `git merge`
 Git highlights merge conflicts in the text editor
 
-Some text for part 2...
+
+Some text for part 2...and 3!!!
+
