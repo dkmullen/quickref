@@ -8,7 +8,7 @@
 
 The page you first see is the application shell. The shell is controlled by an Angular component named `AppComponent`.
 
-The app.component files control the project. `app.module.ts` directs traffic for the app, and needs to know what to import, etc. App-wide styles go in `app.component.css`, for example.
+The app.component files control the project. `app.module.ts` directs traffic for the app, and needs to know what to import, etc. App-wide styles go in `app.component.css`, for example, but **global styles** go in src/styles.css
 
 Instantiate a new class (ie hero.ts) at the top-level of /app
 
@@ -56,6 +56,15 @@ To add Bootstrap to an Angular project:
 - Get bootstrap: `npm install --save bootstrap`
 - Import it into `src/styles.scss` - `@import "../node_modules/bootstrap/scss/bootstrap";`
 
+Or, in `angular-cli.json`:
+```
+-    "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "styles.css"
+      ],
+```
+
+
 [Angular CLI Wiki](https://github.com/angular/angular-cli/wiki)
 
 **Interface** - Defines what's inside an object. Interfaces are contracts. Once you define it, TS throws an error if you don't respect it.
@@ -65,10 +74,11 @@ To add Bootstrap to an Angular project:
 
 Add optional features in app.module.ts like this: 
 - `import { FormsModule } from '@angular/forms';` //  NgModel lives here
-- ngModel is for tw-way data-binding
+- ngModel is for two-way data-binding
+- also, add FormsMoudle under imports in the same file. This used to be standard in earlier versions of the CLI, but no more!
 - Ex `<input [(ngModel)]="hero.name" placeholder="name">` (note the brackets) - updates the name in the model and on display on the page
 
-
+Use assets folder for static assets like pictures, and enviroments for env vars
 
 
 
