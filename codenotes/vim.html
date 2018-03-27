@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="shell.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<title>VIM Notes</title>
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+		<h1>VIM Notes</h1>
+	</header>
+	<h2>Command Mode: Moving</h2>
+	<ul>
+		<li><code>h</code> - Moves one char to the left</li>
+		<li><code>l</code> - Moves one char to the right</li>
+		<li><code>j</code> - Moves down one line</li>
+		<li><code>k</code> - Moves up one line</li>
+		<li><code>0</code> - Moves to beginning of line (zero!)</li>
+		<li><code>$</code> - Moves to end of line</li>
+		<li><code>w</code> - Moves forward one word</li>
+		<li><code>b</code> - Moves backward one word</li>
+		<li><code>G</code> - Moves to end of file</li>
+		<li><code>gg</code> - Moves to beginning of file</li>
+		<li><code>`.</code> - Moves to last edit</li>
+	</ul>
+	<p>AND prefacing a command with a number executes that command multiple times.</p>
+	<hr>
+	<h2>Command Mode: Editing</h2>
+	<ul>
+		<li><code>d</code> - Starts delete operation</li>
+		<li><code>dd</code> - Cuts a line, puts it into buffer</li>
+		<li><code>dw</code> - Deletes a word</li>
+		<li><code>d0</code> - Deletes to start of line(zero!)</li>
+		<li><code>d$</code> - Deletes to end of line</li>
+		<li><code>dgg</code> - Deletes to beginning of file</li>
+		<li><code>dG</code> - Deletes to end of file</li>
+		<li><code>u</code> - Undo</li>
+		<li><code>CTRL-r</code> - Redo last undo</li>
+		<li><code>V</code> - Highlight one line at a time (then use arrow to highlight more)</li>
+		<li><code>v</code> - Highlight one char at a time (then use arrow to highlight more)</li>
+		<li><code>y</code> - Yank text into copy buffer</li>
+		<li><code>P</code> - Paste text on the current line</li>
+		<li><code>p</code> - Paste text after the current line</li>
+	</ul>
+	<hr>
+	<h2>Command Mode: Searching and replacing</h2>
+	<ul>
+		<li><code>/bunny</code> - Search forward in doc for 'bunny'. Use
+			<code>n</code> to jump to the next one, <code>N</code> for the previous one.</li>
+		<li><code>?bunny</code> - Search backward in doc for 'bunny'</li>
+		<li><code>:%s/bunny/rabbit/g</code> - Search entire doc for 'bunny', replace w/ 'rabbit'</li>
+		<li><code>:%s/bunny/rabbit/gc</code> - Same as above but confirm before replacing</li>
+	</ul>
+	<hr>
+	<h2>Standard colors</h2>
+	<ul>
+		<li>blue, darkblue, default, delek, desert elflord</li>
+		<li>evening, industry, koehler, morning, murphy, pablo</li>
+		<li>peachpuff, ron, shine, slate, torte, zellner</li>
+	</ul>
+	</body>
+</html>

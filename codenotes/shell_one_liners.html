@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="shell.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<title>Shell: One-Liners</title>
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+		<h1>Learning the shell: One-line list</h1>
+	</header>
+
+	<ul>
+		<li><code>alias</code> - Assign commands & values to new or existing commands (<code>alias: foo='ls -l ~/MyDocs'</code>)</li>
+		<li><code>apropos</code> - Find what man page is appropriate</li>
+		<li><code>cal</code> - Show a calendar of the current month</li>
+		<li><code>cat</code> - Concatenate files and print to standard output</li>
+			<li class="level-two"><code>-A</code> - Show non-printing characters, such as TAB</li>
+			<li class="level-two"><code>-n</code> - Show line numbers</li>
+			<li class="level-two"><code>-s</code> - Supress multiple blank lines</li>
+		<li><code>cd</code> - Change directory</li>
+		<li><code>chmod</code> - Change permission modifiers</li>
+		<li><code>chown</code> - Change ownership</li>
+		<li><code>clear</code> - Clear the terminal (also <code>CTRL-L</code>)</li>
+		<li><code>cp</code> - Copy file or directory</li>
+		
+		<li><code>date</code> - Show the date</li>
+		<li><code>df</code> - Show free space on discs</li>
+		<li><code>echo</code> - Print some arguments</li>
+		<li><code>env</code> - Look at your environment</li>
+		<li><code>exit</code> or <code>CTRL-D</code> - Exit the shell</li>
+		<li><code>export</code> - Export/set a new environment variable</li>
+		<li><code>find</code> - Find files across the whole system with lots of modifiers</li>
+		<li><code>file</code> - Identifies file type</li>
+		<li><code>free</code> - Show free memory</li>
+		<li><code>grep</code> - Find things inside of files</li>
+			<ul class="level-two">
+				<li><code>-i</code> or <code>--ignore-case</code> - Ignore case (default is to NOT ignore case)</li>
+				<li><code>-v</code> or <code>--invert-match</code> - Print only lines that do not match the pattern</li>
+				<li><code>-c</code> or <code>--count</code> - Print the number of matches (or non-matches, if <code>v</code> is specified) rather than the matches themselves.</li>
+				<li><code>-l</code> or <code>--files-with-matches</code> - Print the name of the file containing a match, not the match itself.</li>	
+				<li><code>-L</code> or <code>--files-without-match</code> - Print the name of the files that do NOT contain a match.</li>	
+				<li><code>-n</code> or <code>--line-number</code> - Print each matching line with the line number in the file.</li>
+				<li><code>-h</code> or <code>--no-filename</code> - For multi-file searches, supress filenames.</li>	
+			</ul>
+		<li><code>head</code> - Print first ten lines of a file</li>
+		<li><code>hostname</code> - My computer's network name</li>
+		<li><code>less</code> - Page through a file</li>
+		<li><code>ln</code> - Make hard and symbolic links</li>
+		<li><code>locate</code> - Search entire system for files and dirs by name.</li>
+		<li><code>ls</code> - List directory</li>
+		<li><code>man</code> - Read a maunal page</li>
+		<li><code>mkdir</code> - Make one directory (use <code> -p</code> for a path)</li>
+		<li><code>mv</code> - Move file or directory</li>
+		<li><code>popd</code> - Pop directory</li>
+		<li><code>pushd</code> - Push directory</li>
+		<li><code>pwd</code> - Print working directory</li>
+		<li><code>rm</code> - Remove</li>
+		<li><code>rmdir</code> - Remove directory (Is this still needed?)</li>
+		<li><code>sort</code> - Sort lines of text</li>
+			<li class="level-two"><code>-b</code> - Ignore leading blanks</li>
+			<li class="level-two"><code>-f</code> - Ignore case</li>
+			<li class="level-two"><code>-n</code> - Numeric sort</li>
+			<li class="level-two"><code>-r</code> - Reverse sort</li>
+		<li><code>sudo</code> - Become root user</li>
+		<li><code>tail</code> - Print last ten lines of a file</li>
+		<li><code>touch</code> - Make a new file or update timestamp of existing one.</li>
+		<li><code>up-arrow</code> - Show previous command</li>
+		<li><code>xargs</code> - Execute arguments</li>
+		<li><code>></code> - Redirects the output of the command, creating or overwriting</li>
+		<li><code>>></code> - Redirects the output of the command, appending</li>
+		<li><code>|</code> - Redirects the output of the command, piping it to another command</li>
+	</ul>
+	<h2>Notes:</h2>
+	<ul>
+		<li><code>pushd</code> - Takes your current directory and "pushes" it into a list for later, then it changes to another directory. It's like saying, "Save where I am, then go here."</li>
+		<li><code>popd</code> - Takes the last directory you pushed and "pops" it off, taking you back there.</li>
+		<li>If you run <code>pushd</code> with no arguments, it will switch between your current directory and the last one you pushed. It's an easy way to switch back and forth between two directories. <em>This does not work in PowerShell.</em></li>
+	</ul>
+	<h2>Keyboard shortcuts in Shell</h2>
+	<ul>
+		<li><code>CTRL-A</code> - Move cursor to beginning of line</li>
+		<li><code>CTRL-C</code> - Quit process</li>
+		<li><code>CTRL-D</code> - Quit the terminal</li>
+		<li><code>CTRL-E</code> - Move cursor to end of line</li>
+		<li><code>ALT-F</code> - Move cursor forward one word</li>
+		<li><code>ALT-B</code> - Move cursor backward one word</li>
+		<li><code>clear</code> - Clear the terminal (also <code>CTRL-L</code>)</li>
+		<li><code>CTRL-K</code> - Kill (cut) text from cursor to end of line</li>
+		<li><code>CTRL-U</code> - Kill text from cursor to beginning of line</li>
+		<li><code>ALT-D</code> - Kill text from cursor to end of current word</li>
+		<li><code>ALT-BACKSPACE</code> - Kill text from cursor to beginning of current one word</li>
+		<li><code>CTRL-Y</code> - Yank text from the kill-ring and paste it at the cursor</li>			
+	</ul>
+</div>
+</body>
+</html>

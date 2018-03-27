@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="shell.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<title>Regular expressions</title>
+</head>
+
+<body>
+<div id="wrapper">
+	<header><h1>Regular Expressions</h1></header>
+	<h2>Metacharacters - ^ $ . [ ] { } - ? * + ( ) | \</h2>
+	<ul>
+		<li><code>.</code> - Any character - <code>grep 'De..is' names.txt</code></li>
+		<li><code>^</code> - Indicates regex should be at beginning of line - <code>grep '^dkm' names.txt</code></li>
+		<li><code>$</code> - Indicates regex should be at end of line - <code>grep 'dkm$' names.txt</code></li>
+		<li><code>[]</code> - Match any single character w/in brackets - <code>grep '[bg]zip' names.txt</code> matches bzip* or gzip*. Metacharacters generally lose their special meaning w/in brackets, except:</li>
+		<li class="level-two"><code>[^bg]</code> - When caret appears first within brackets, it negates the rest. - <code>grep '[^bg]zip' names.txt</code> matches .zip* except bzip* or gzip*. If the caret isn't first, it loses its special meaning and becomes part of the search string.</li>
+		<li class="level-two"><code>-</code> - Used in brackets to indicate range - <code>[A-z]</code> or <code>[A-Za-z0-9]</code>. Put the dash first to take away its special meaning and make it part of the string.</li>
+		<li><code>?</code> - Match zero or one times.</li>
+		<li><code>*</code> - Match zero or multiple times.</li>
+		<li><code>+</code> - Match one or multiple times.</li>
+		<li><code>{n}</code> - Match the element preceding brackets if it occurs exactly <em>n</em> times</li>
+		<li><code>{n,m}</code> - Match the preceding element if it occurs at least <em>n</em> times, but no more than <em>m</em> times</li>
+		<li><code>{n,}</code> - Match the preceding element if it occurs <em>n</em> or more times</li>
+		<li><code>{,m}</code> - Match the preceding element if it occurs no more than <em>m</em> times</li>
+		<li><code>\</code> - Use to escape special meaning of characters</li>
+		
+		
+	
+	</ul>
+
+</div>
+</body>
+</html>

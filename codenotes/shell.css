@@ -1,0 +1,52 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 110%;
+	line-height: 1.15;
+	max-width: 1000px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+#wrapper {
+	margin-left: 20px;
+}
+header {
+	margin: 10px 0 20px 0;
+}
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 130%;
+	margin-bottom: 5px;
+}
+code {
+	font-family: "Courier New", Courier, monospace;
+	color: rgb(219, 33, 42);
+}
+ul {
+	list-style-type: disc;
+	margin: 0 0 10px 40px;
+}
+.level-two {
+	list-style-type: circle;
+	margin: 0 0 0 30px;
+}
+em {
+	font-style: italic;
+}
+strong {
+    font-weight: 700;
+}
+.indent {
+	margin-left: 25px;
+}
+.indent-two {
+	margin-left: 50px;
+}
+.code-box {
+	background-color: rgb(214, 214, 214);
+	padding: 10px;
+	width: 50%;
+	margin: 10px 0 10px 0;
+}
