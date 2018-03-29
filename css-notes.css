@@ -1,0 +1,19 @@
+/* Second element is direct child of the first */
+div > p {
+  color: red;
+}
+
+/* Second element is a descendant of the first */
+div p {
+  color: red;
+}
+
+/* Elements have same parent, second immediately follows first */
+h2 + p {
+
+}
+
+/* Elements have same parent, second follows first */
+h2 ~ p {
+
+}
