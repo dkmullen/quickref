@@ -17,3 +17,10 @@ h2 + p {
 h2 ~ p {
 
 }
+/*
+font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+
+See https://furbo.org/2018/03/28/system-fonts-in-css/
+*/
