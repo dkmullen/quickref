@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="shell.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<title>Shell Commands</title>
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+		<h1>Learning the shell</h1>
+	</header>
+	<h2>ls</h2>
+	<ul>
+		<li><code>ls</code> (lists filed in current dir)</li>
+		<li><code>ls -l</code> (lists files in long format)</li>
+		<li><code>ls -a</code> (lists all files including hidden)</li>
+		<li><code>ls -la</code> (does both of the above)</li>
+		<li><code>ls /dir_name</code> (lists files in another dir)</li>
+		<li><code>ls /dir1 /dir2</code> (lists files in multiple dirs)</li>
+	</ul>
+	<h2>cd</h2>
+	<ul>	
+		<li><code>cd</code> (by itself, changes to user's home dir)</li>
+		<li><code>cd -</code> (changes to previous working dir)</li>
+		<li><code>cd ..</code> (changes to the parent dir)</li>
+		<li><code>cd ./dir_name</code> (changes to child dir - cd dir_name is almost always okay too)</li>
+	</ul>
+	<h2>Misc</h2>
+	<ul>
+		<li><code>up-arrow</code> (show previous command)</li>
+		<li><code>pwd</code> (print working dir)</li>
+		<li><code>less</code> (show contents of a txt file</li>
+		<li><code>file file_name</code> (identifies file type)</li>
+	</ul>
+	<h2>More on <code>less</code></h2>
+	<ul>
+		<li><code>page up</code> or <code>b</code> (scroll up one page)</li>
+		<li><code>page down</code> or <code>space</code> (scroll down one page)</li>
+		<li><code>G</code> (jump to end)</li>
+		<li><code>1G</code> (jump to beginning)</li>
+		<li><code>/characters</code> (search forward for specified characters)</li>
+		<li><code>n</code> (repeat search)</li>
+		<li><code>h</code> (list commands and options for <code>less</code>)</li>
+		<li><code>q</code> (quit)</li>
+	</ul>
+	<h2>Manipulating Files</h2>
+	<ul>
+		<li><code>cp</code> (copy - but use <code>cp -r dir1 dir2</code> to move dirs)</li>
+		<li><code>mv</code> (move - use for renaming files too by moving it to the same place with a new name)</li>
+		<li><code>rm</code> (remove)</li>
+		<li><code>mkdir</code> (make a new dir)</li>
+	</ul>
+	<h2>Some wildcards</h2>
+	<ul>
+		<li><code>*</code> (matches any character)</li>
+		<li><code>?</code> (matches any single character)</li>
+		<li><code>[characters]</code> (matches any character that is part of the set, 
+		including a few special classes):</li>
+			<ul class="level-two">
+				<li><code>[:alnum:]</code> alphanumeric</li>
+				<li><code>[:alpha:]</code> alphabetic</li>	
+				<li><code>[:digit:]</code> numerals</li>
+				<li><code>[:upper:]</code> uppercase letters</li>
+				<li><code>[:lower:]</code> lowercase letters</li>
+			</ul>
+		<li><code>[!characters]</code> (matches any character that is NOT part of the set)</li>
+	</ul>
+	<h2>Usage examples</h2>
+	<ul>
+		<li><code>g*</code> (all filenames starting with 'g')</li>
+		<li><code>b*.txt</code> (all filenames starting with 'b' and ending with 'txt')</li>
+		<li><code>DATA???</code> (all filenames starting with 'DATA' followed by exactly three more characters)</li>
+		<li><code>[abc]*</code> (all filenames starting with 'a' 'b' or 'c' followed by any other characters)</li>
+
+		<li><code>BACKUP.[[:digit:]][[:digit:]]</code> (all filenames starting with BACKUP followed by exactly two numerals)</li>
+		<li><code>*[![:lower:]]</code> (all filenames that do NOT end with a lowercase letter)</li>
+	</ul>
+</div>
+</body>
+</html>

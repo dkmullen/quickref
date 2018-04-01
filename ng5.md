@@ -12,7 +12,7 @@ The app.component files control the project. `app.module.ts` directs traffic for
 
 Instantiate a new class (ie hero.ts) at the top-level of /app
 
-The **component** is the basic building block of ng
+The **component** is the basic building block of ng. Components shouldn't fetch/save data. Components should present data and delegate data access to a **service**.
 
 In `src/app/app.component.ts`, the **root component**:
 
@@ -81,4 +81,4 @@ Add optional features in app.module.ts like this:
 Use assets folder for static assets like pictures, and enviroments for env vars
 
 
-
+**Service** to handle data fetching and sending. `ng generate service name`

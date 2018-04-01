@@ -1,0 +1,7 @@
+// $main-color: #521751;
+$colors: (main: #521751, secondary: #fa923f);
+//$border-default: 0.05rem solid $main-color;
+$border-default: 0.05rem solid map-get($colors, main);
+
+// Can also set a var to something like $size-normal:3em; and then use
+// meth on it - $size-normal *2; or $size-normal / 3;

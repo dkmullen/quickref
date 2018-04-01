@@ -1,0 +1,34 @@
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 110%;
+	line-height: 1.15;
+	max-width: 1000px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+#wrapper {
+	margin-left: 20px;
+}
+header {
+	margin: 10px 0 20px 0;
+}
+h1 {
+	font-size: 200%;
+}
+h2 {
+	font-size: 130%;
+}
+code {
+	font-family: "Courier New", Courier, monospace;
+	color: rgb(219, 33, 42);
+}
+ul {
+	list-style-type: disc;
+	list-style-position: inside;
+	margin: 0 0 10px 20px;
+}
+.level-two {
+	list-style-type: circle;
+	margin: 0 0 0 30px;
+}
