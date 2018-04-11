@@ -1,0 +1,4 @@
+sudo mkdir -p /data/db
+sudo chown -Rv dkm /data/db
+changed ownership of '/data/db' from root to dkm
+ 

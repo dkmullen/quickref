@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Shell script template
+# Be sure to change permissions with 'chmod 755 [script_name]'
+# And place it in home/dennis/bin where PATH can find it
+
+echo 'Hello, world!'

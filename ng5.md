@@ -82,3 +82,11 @@ Use assets folder for static assets like pictures, and enviroments for env vars
 
 
 **Service** to handle data fetching and sending. `ng generate service name`
+
+.datatable-header-cell-label, .datatable-body-cell-label span {
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: normal !important;
+  color: green;
+
+}
