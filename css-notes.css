@@ -10,12 +10,12 @@ div p {
 
 /* Elements have same parent, second immediately follows first */
 h2 + p {
-
+  color: dodgerblue;
 }
 
 /* Elements have same parent, second follows first */
 h2 ~ p {
-
+  color: wheat;
 }
 /*
 font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
