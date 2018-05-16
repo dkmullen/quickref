@@ -27,3 +27,14 @@ function mapOrder (array, order, key) {
 };
 
 mapOrder(dogs2, sorting, "dog");
+
+//
+import * as _ from 'lodash';
+
+  this.disks.push(disk);
+    this.disks = [...this.disks];
+    this.guessVdevType();
+    this.estimateSize();
+    this.disks = this.mySorter(this.disks, 'devname');
+    // this.disks = _.sortBy(this.disks, 'devname');
+  }
