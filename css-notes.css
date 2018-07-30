@@ -1,3 +1,10 @@
+/* 3 rules of positioning:
+   Fixed positioning: The viewport is the containing element
+   Absolute positioning: Containing block is the first ancestor (content plus padding)
+        with position other than static.
+   Static or relative: Container is the first ancestor (content only) w/c is a block-level element
+*/
+
 /* Second element is direct child of the first */
 div > p {
   color: red;
