@@ -5,6 +5,7 @@ class Person:
 
     def intro_me(self):
         print(f"Hi, I am {self.name} and I am {self.age} years old.")
+        print("Hello, I am", self.name, "and I am", self.age, "years old.")
 
 p1 = Person("Dennis", "54")
 p1.intro_me()
